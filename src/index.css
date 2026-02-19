@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cores ARTER Style - Donizete Santana */
+    --primary-accent: 45 100% 51%;
+    /* #ffc107 - Amber/Yellow */
+    --background: 0 0% 100%;
+    --foreground: 232 15% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 232 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 232 15% 15%;
+    --primary: var(--primary-accent);
+    --primary-foreground: 0 0% 10%;
+    --secondary: 232 15% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 232 10% 95%;
+    --muted-foreground: 232 10% 40%;
+    --accent: var(--primary-accent);
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 232 10% 88%;
+    --input: 232 10% 88%;
+    --ring: var(--primary-accent);
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 232 15% 15%;
+    --sidebar-primary: var(--primary-accent);
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 232 10% 95%;
+    --sidebar-accent-foreground: 232 15% 15%;
+    --sidebar-border: 232 10% 88%;
+    --sidebar-ring: var(--primary-accent);
+  }
+
+  .dark {
+    --background: 240 14% 14%;
+    /* #1e1e28 */
+    --foreground: 0 0% 100%;
+    --card: 240 14% 16%;
+    /* #20202a */
+    --card-foreground: 0 0% 95%;
+    --popover: 240 14% 16%;
+    --popover-foreground: 0 0% 95%;
+    --primary: var(--primary-accent);
+    --primary-foreground: 0 0% 10%;
+    --secondary: 240 14% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 14% 20%;
+    --muted-foreground: 240 5% 65%;
+    --accent: var(--primary-accent);
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 14% 22%;
+    --input: 240 14% 22%;
+    --ring: var(--primary-accent);
+    --sidebar-background: 240 14% 14%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: var(--primary-accent);
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 240 14% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 14% 22%;
+    --sidebar-ring: var(--primary-accent);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-primary-accent {
+    color: hsl(var(--primary-accent));
+  }
+
+  .bg-primary-accent {
+    background-color: hsl(var(--primary-accent));
+  }
+
+  .text-secondary-accent {
+    color: hsl(240 14% 14%);
+  }
+
+  .bg-secondary-accent {
+    background-color: hsl(240 14% 14%);
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(240 14% 14%) 0%, hsl(240 14% 18%) 50%, hsl(var(--primary-accent)) 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--primary-accent)) 0%, hsl(45 90% 40%) 100%);
+  }
+
+  .shadow-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .shadow-card-hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-soft {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(240 14% 12%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary-accent));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(45 90% 45%);
+}
+
+/* Foco visível para acessibilidade */
+:focus-visible {
+  outline: 2px solid hsl(var(--primary-accent));
+  outline-offset: 2px;
+}
+
+/* Skip link para acessibilidade */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: hsl(var(--primary-accent));
+  color: black;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

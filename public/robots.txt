@@ -1,0 +1,26 @@
+# robots.txt for DONIZETE SANTANA - Serviços Acadêmicos
+# https://donizete-servicos-academicos.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://donizete-servicos-academicos.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
