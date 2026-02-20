@@ -33,7 +33,7 @@ export const CONTATO = {
 // ============================================
 
 export const SOCIAL_LINKS = {
-  whatsapp: `https://wa.me/${CONTATO.whatsapp}`,
+  whatsapp: `https://wa.me/${CONTATO.whatsapp}?text=${encodeURIComponent("Gostaria de fazer um orçamento")}`,
   email: `mailto:${CONTATO.email}`,
   instagram: `https://instagram.com/${CONTATO.instagram}`,
   facebook: `https://facebook.com/${CONTATO.facebook}`,
