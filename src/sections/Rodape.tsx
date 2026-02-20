@@ -147,7 +147,7 @@ export function Rodape() {
               {rodape.direitos}
             </p>
             <div className="flex items-center gap-4 text-sm">
-              {rodape.links.map((link, index) => (
+              {/* {rodape.links.map((link, index) => (
                 <a
                   key={index}
                   href={link.url}
@@ -155,7 +155,7 @@ export function Rodape() {
                 >
                   {link.texto}
                 </a>
-              ))}
+              ))} */}
             </div>
           </div>
           {/* <p className="text-center text-gray-500 text-xs mt-4 flex items-center justify-center gap-1">
