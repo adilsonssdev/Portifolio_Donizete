@@ -251,6 +251,47 @@ Seja você um estudante do ensino médio, graduação, mestrado ou doutorado, es
       { texto: "Termos de Uso", url: "#" },
     ],
   },
+
+  legal: {
+    termosDeUso: {
+      titulo: "Termos de Uso",
+      texto: `
+        <h3>1. Aceitação dos Termos</h3>
+        <p>Ao acessar e contratar os serviços acadêmicos de Donizete Santana, você concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis. Se você não concordar com algum destes termos, está proibido de usar ou acessar este site.</p>
+
+        <h3>2. Descrição dos Serviços</h3>
+        <p>Os serviços oferecidos incluem formatação técnica (ABNT, APA, Vancouver, etc.), revisão ortográfica e gramatical, e orientação metodológica para trabalhos acadêmicos. Não realizamos a venda de trabalhos prontos ou qualquer prática que viole a integridade acadêmica.</p>
+
+        <h3>3. Responsabilidades do Cliente</h3>
+        <p>O cliente é responsável pela veracidade das informações fornecidas e pela originalidade do conteúdo base enviado para formatação ou revisão. O cliente deve estar ciente de que as orientações são sugestões técnicas para aprimoramento do trabalho.</p>
+
+        <h3>4. Prazos e Entregas</h3>
+        <p>Os prazos serão acordados individualmente no momento do orçamento, baseando-se na complexidade e volume do trabalho. O cumprimento dos prazos depende do envio completo do material pelo cliente na data estipulada.</p>
+
+        <h3>5. Pagamento</h3>
+        <p>O início da prestação do serviço ocorre mediante o pagamento acordado (entrada ou valor integral). Em caso de desistência após o início do trabalho, o valor da entrada não será reembolsado, visando cobrir as horas já dedicadas ao projeto.</p>
+      `
+    },
+    politicaPrivacidade: {
+      titulo: "Política de Privacidade",
+      texto: `
+        <h3>1. Coleta de Informações</h3>
+        <p>Coletamos informações básicas como nome, e-mail e telefone via formulário ou WhatsApp, exclusivamente para fins de contato comercial e elaboração de orçamentos.</p>
+
+        <h3>2. Uso das Informações</h3>
+        <p>Seus dados são utilizados apenas para a prestação do serviço contratado e para comunicação direta sobre o seu projeto. Não compartilhamos, vendemos ou alugamos suas informações pessoais com terceiros.</p>
+
+        <h3>3. Sigilo Acadêmico</h3>
+        <p>Garantimos sigilo absoluto sobre o conteúdo dos arquivos enviados. Seu trabalho não será divulgado, publicado ou compartilhado com outras pessoas, respeitando sua propriedade intelectual e privacidade acadêmica.</p>
+
+        <h3>4. Segurança</h3>
+        <p>Implementamos medidas de segurança para proteger suas informações pessoais e arquivos contra acesso, alteração, divulgação ou destruição não autorizados.</p>
+
+        <h3>5. Alterações</h3>
+        <p>Esta política pode ser atualizada ocasionalmente para refletir mudanças em nossas práticas. Recomendamos a revisão periódica desta página.</p>
+      `
+    }
+  },
 } as const;
 
 // ============================================

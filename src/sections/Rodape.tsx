@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { GraduationCap, MessageCircle, Mail, Instagram, Facebook } from 'lucide-react';
 import { CONTEUDO, CONTATO, SOCIAL_LINKS, NAV_LINKS } from '@/config';
+import { Modal } from '@/components/ui/modal';
 
 export function Rodape() {
-  const { rodape } = CONTEUDO;
+  const { rodape, legal } = CONTEUDO;
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -147,22 +151,39 @@ export function Rodape() {
               {rodape.direitos}
             </p>
             <div className="flex items-center gap-4 text-sm">
-              {rodape.links.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {link.texto}
-                </a>
-              ))}
+              <button
+                onClick={() => setIsPrivacyOpen(true)}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Política de Privacidade
+              </button>
+              <button
+                onClick={() => setIsTermsOpen(true)}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Termos de Uso
+              </button>
             </div>
           </div>
-          {/* <p className="text-center text-gray-500 text-xs mt-4 flex items-center justify-center gap-1">
-            Feito com <Heart className="w-3 h-3 text-red-500 fill-red-500" aria-hidden="true" /> para ajudar estudantes
-          </p> */}
         </div>
       </div>
+
+      {/* Legal Modals */}
+      <Modal
+        isOpen={isPrivacyOpen}
+        onClose={() => setIsPrivacyOpen(false)}
+        title={legal.politicaPrivacidade.titulo}
+      >
+        <div dangerouslySetInnerHTML={{ __html: legal.politicaPrivacidade.texto }} />
+      </Modal>
+
+      <Modal
+        isOpen={isTermsOpen}
+        onClose={() => setIsTermsOpen(false)}
+        title={legal.termosDeUso.titulo}
+      >
+        <div dangerouslySetInnerHTML={{ __html: legal.termosDeUso.texto }} />
+      </Modal>
     </footer>
   );
 }
