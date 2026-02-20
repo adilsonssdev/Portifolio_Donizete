@@ -220,7 +220,7 @@ Seja você um estudante do ensino médio, graduação, mestrado ou doutorado, es
         resposta: "Aceito PIX, transferência bancária e pagamento via Mercado Pago. Para trabalhos de maior valor, posso parcelar em até 3x sem juros. O pagamento pode ser feito 50% no início e 50% na entrega, ou à vista com desconto.",
       },
       {
-        pergunta: "Os trabalhos realizados pela assessoria são garantidamente originais e livres de plágio?",
+        pergunta: "Os trabalhos realizados são garantidamente originais e livres de plágio?",
         resposta: "Sim. Todos os trabalhos produzidos são originalmente desenvolvidos, e empregamos rigorosas plataformas e software anti-plágio para assegurar a autenticidade de cada trabalho. Isso garante a integridade acadêmica e a satisfação de vocês clientes.",
       },
       {
