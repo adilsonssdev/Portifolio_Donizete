@@ -2,7 +2,7 @@
 
 Site de portfólio profissional moderno para **Donizete Santana**, especializado em serviços acadêmicos, formatação ABNT, revisão ortográfica e orientação metodológica.
 
-![Versão](https://img.shields.io/badge/versão-1.1.0-green)
+![Versão](https://img.shields.io/badge/versão-1.2.0-green)
 ![Licença](https://img.shields.io/badge/licença-MIT-blue)
 ![Status](https://img.shields.io/badge/status-otimizado-brightgreen)
 
@@ -21,29 +21,31 @@ Site de portfólio profissional moderno para **Donizete Santana**, especializado
 Este projeto é um portfólio de alta performance, desenvolvido com foco em conversão e autoridade profissional. Apresenta uma interface limpa, animações fluidas e suporte completo a temas.
 
 ### Seções Inclusas:
-- **Hero**: Chamada de impacto com CTAs diretos.
+- **Hero**: Chamada de impacto com CTAs diretos e WhatsApp pré-configurado.
 - **Sobre**: Bio profissional com foto personalizada e formação acadêmica centralizada.
 - **Serviços**: Detalhamento de trabalhos e processos acadêmicos.
 - **Diferenciais**: Por que escolher os serviços de Donizete Santana.
 - **Depoimentos**: Prova social de clientes satisfeitos.
-- **FAQ**: Dúvidas frequentes (incluindo benefícios do Modo Escuro).
+- **FAQ**: Dúvidas frequentes (plágio, prazos, pagamentos e benefícios do Modo Escuro).
 - **Contato**: Formulário funcional e integração com WhatsApp.
+- **Jurídico**: Modais de Termos de Uso e Política de Privacidade integrados.
 
 ## 🚀 Tecnologias
 
-- **React 18** + **Vite** (Build ultra-rápido)
+- **React 19** + **Vite 7** (Build ultra-rápido)
 - **TypeScript** (Segurança e escalabilidade)
 - **Tailwind CSS** (Estilização moderna e responsiva)
 - **shadcn/ui** (Componentes de alta qualidade)
 - **next-themes** (Gestão inteligente de temas Light/Dark)
 - **Lucide React** (Ícones semânticos)
 
-## ✨ Novidades desta Versão
+## ✨ Novidades desta Versão (v1.2.0)
 
+- ⚖️ **Modais Jurídicos**: Termos de Uso e Política de Privacidade agora abrem em janelas sobrepostas, mantendo o usuário no site.
+- 💬 **WhatsApp Otimizado**: Links agora incluem mensagem pré-preenchida ("Gostaria de fazer um orçamento") para facilitar o contato inicial.
+- 🛡️ **Foco em Originalidade**: FAQ atualizado com seção dedicada à garantia de trabalhos livres de plágio.
 - 🌙 **Modo Escuro Completo**: Suporte a temas claro, escuro e sistema.
 - 🖼️ **Foto Dinâmica**: Sua foto profissional com efeitos modernos de vidro e brilho.
-- 📏 **Layout Otimizado**: Seção de formação acadêmica redesenhada para melhor visualização em desktops.
-- 🧹 **Código Limpo**: Purga de componentes não utilizados e otimização de assets.
 
 ## 📁 Estrutura Simplificada
 
@@ -55,7 +57,7 @@ Este projeto é um portfólio de alta performance, desenvolvido com foco em conv
 ├── src/
 │   ├── components/
 │   │   ├── custom/         # Navigation, ThemeToggle
-│   │   └── ui/             # Componentes essenciais (Button, Card, etc)
+│   │   └── ui/             # Componentes (Button, Card, Modal, etc)
 │   ├── sections/           # Seções modulares da página
 │   ├── config.ts           # CENTRAL DE CONTEÚDO (Edite tudo aqui!)
 │   ├── App.tsx             # Orquestrador das seções
@@ -66,8 +68,8 @@ Este projeto é um portfólio de alta performance, desenvolvido com foco em conv
 
 ### 1. Editar Textos e Contatos
 Quase todo o site pode ser editado em um único arquivo: `src/config.ts`.
-- Altere seu WhatsApp, E-mail e redes sociais no objeto `CONTATO`.
-- Altere os textos das seções, depoimentos e perguntas do FAQ no objeto `CONTEUDO`.
+- **WhatsApp**: Altere o número no objeto `CONTATO`. A mensagem padrão pode ser ajustada em `SOCIAL_LINKS.whatsapp`.
+- **Conteúdo**: Altere os textos das seções, depoimentos, perguntas do FAQ e textos jurídicos no objeto `CONTEUDO`.
 
 ### 2. Trocar a Foto de Perfil
 Para trocar sua foto:
@@ -93,5 +95,5 @@ Recomendamos **Vercel** ou **Netlify**. Basta conectar o repositório e configur
 ---
 
 <p align="center">
-  Desenvolvido com foco em excelência acadêmica.
+  Desenvolvido com foco em excelência acadêmica e conversão profissional.
 </p>
