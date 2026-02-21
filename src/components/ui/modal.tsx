@@ -1,4 +1,4 @@
-import { useCallback, useEffect, ReactNode } from 'react';
+import { useCallback, useEffect, type ReactNode } from 'react';
 import { X } from 'lucide-react';
 import { Button } from './button';
 
