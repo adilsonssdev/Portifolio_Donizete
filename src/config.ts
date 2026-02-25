@@ -18,6 +18,10 @@ export const CONTATO = {
   whatsapp: "5512988726694",
   whatsappFormatado: "(12) 98872-6694",
 
+  // WhatsApp 2
+  whatsapp2: "551230199132",
+  whatsappFormatado2: "(12) 3019-9132",
+
   // E-mail
   email: "donizete_santana@yahoo.com.br",
 
@@ -34,6 +38,7 @@ export const CONTATO = {
 
 export const SOCIAL_LINKS = {
   whatsapp: `https://wa.me/${CONTATO.whatsapp}?text=${encodeURIComponent("Gostaria de fazer um orçamento")}`,
+  whatsapp2: `https://wa.me/${CONTATO.whatsapp2}?text=${encodeURIComponent("Gostaria de fazer um orçamento")}`,
   email: `mailto:${CONTATO.email}`,
   instagram: `https://instagram.com/${CONTATO.instagram}`,
   facebook: `https://facebook.com/${CONTATO.facebook}`,

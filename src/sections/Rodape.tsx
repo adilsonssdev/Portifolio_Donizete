@@ -109,6 +109,17 @@ export function Rodape() {
               </li>
               <li>
                 <a
+                  href={SOCIAL_LINKS.whatsapp2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                  <span>{CONTATO.whatsappFormatado2}</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href={SOCIAL_LINKS.email}
                   className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                 >

@@ -95,6 +95,13 @@ Mensagem: ${formData.mensagem}`;
       color: 'bg-green-500',
     },
     {
+      icon: MessageCircle,
+      label: 'WhatsApp 2',
+      value: CONTATO.whatsappFormatado2,
+      href: SOCIAL_LINKS.whatsapp2,
+      color: 'bg-green-600',
+    },
+    {
       icon: Mail,
       label: 'E-mail',
       value: CONTATO.email,
